@@ -1,0 +1,207 @@
+clear
+echo $HOME
+man man
+man pwd
+pwd
+whoami
+ls
+ls -l
+ls -la
+mkdir clase4_114
+ls -l
+cd clase4_114
+pwd
+cat > archivo1.txt
+ls -l
+cat archivo1.txt
+cat > archivo2.txt
+ls -l
+cat archivo2.txt
+cat *.txt
+cat archivo1.txt archivo2.txt > archivo3.txt
+ls -l
+cat archivo3.txt
+grep Linea2 archivo3.txt
+grep -c Linea2 archivo3.txt
+grep -n Linea2 archivo3.txt
+grep -v Linea2 archivo3.txt
+grep -i linea2 archivo3.txt
+pwd
+cd ..
+pdw
+pwd
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+pwd
+ls -l
+cat id_ed25519.pub
+cd ..
+pwd
+ls -l
+cd repogit
+ls -l
+git clone git@github.com:tizianaragosta/vmvagrant_repo.git
+ls -l
+git clone git@github.com:tizianaragosta/vmvagrant_repo.git
+cd ..
+pwd
+ls -l
+cd repogit 
+ls -l
+cd vmvagrant_repo
+ls -l
+cat README.md
+echo "Archivo de prueba"
+echo "Archivo de prueba" >prueba.txt
+ls -l
+cat prueba.txt
+git status
+git add .
+git status
+git commit -m "agrego archivo prueba.txt"
+git status
+ls -l
+git push
+ls -l
+vagrant halt
+cd ..
+vagrant halt
+pwd
+exit
+ls -l
+pwd
+cd clase4_114
+pwd
+ls -l
+cd ..
+pwd
+tree
+sudo apt update
+sudo apt install tree
+tree
+ls -l
+pwd
+mkdir clase5
+ls -l
+cd clase5/
+ls -l
+mkdir practica
+ls -l
+cd practica
+ls -l
+touch practica1.txt
+ls -l
+cp practica1.txt practica2.txt
+ls -l
+rm practica1.txt
+ls -l
+mv practica2.txt /home/vagrant/clase5/
+ls -l
+cd ..
+ls -l
+rmdir practica/
+ls -l
+mkdir facturas pedidos
+ls -l
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p ragosta_1/contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p ragosta_2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+tree
+whoami
+id
+cd 
+pwd
+cat /etc/passwd
+grep -i vagrant /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo grep vagrant /etc/shadow
+cat /etc/group
+grep vagrant /etc/group
+sudo su
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+sudo useradd -m -s /bin/bash -c "mi primer usuario pepe" -G Alumnos pepe
+cat /etc/group
+cat /etc/passwd
+ls -l /home
+sudo passwd pepe
+sudo cat /etc/shadow
+su - pepe
+pwd
+ls -l
+ls -l /home/pepe
+vagrant halt
+cd
+vagrant halt
+exit
+pwd
+ssh-keygen -t ed25519
+pwd
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:tizianaragosta/TP1_AySO_Ragosta_Nayla.git
+cd repogit
+pwd
+ls -l
+cd TP1_Ayso_Ragosta_Nayla
+ls -l
+cd TP1_Ayso_Ragosta_Nayla
+cd TP1_AySO_Ragosta_Nayla/
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release 
+grep <parámetro> Home_url /etc/os-release 
+grep -i Home_url /etc/os-release 
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+echo “Usuario=$(vagrant)” > datos_usuario.txt
+echo “Usuario=$(whoami)” > datos_usuario.txt
+ls
+git add .
+git config --global user.email "naylaragosta@gmail.com"
+git config --global user.name "tizianaragosta"
+git commit -m "feat: agregar primer ejercicio de datos_usuario"
+git reset datos_url.txt
+git status
+git push
+/proc/cpuinfo
+grep -m 1
+model name
+grep -m 1 "model name" /proc/cpuinfo >> datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+git status
+cat <<EOF >> README.md
+Alumno: Nayla Tiziana Ragosta
+División: 114
+Turno: Mañana
+EOF
+
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p {material1/material2}/uni{1..3}
+tree
+rmdir {material1
+rm -r
+rm -r material1
+rm -r {material1
+tree
+mkdir -p {material1,material2}/uni{1..3}
+tree
+history -a
